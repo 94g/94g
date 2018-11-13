@@ -52,8 +52,7 @@ body {
 }
 
 .beatMain .imgContainer {
-	padding: 0 16px;
-	margin-top: 14px;
+	margin: 0 -16px 10px;
 }
 
 .beatMain .imgContainer img {
@@ -116,27 +115,35 @@ body {
 	padding: 0 4px;
 }
 
+.beatWord fieldset .itemWord {
+	color: #888;
+}
+
 .beatWord button {
 	width: 100%;
-	background: #f60;
+	height: 40px;
+	background: linear-gradient(to left,#00a0FF 0,#FBAA58 100%);
 	border: none;
 	font-size: 14px;
-	padding: 6px 15px 6px 0;
+	font-weight: 600;
+	line-height: 40px;
 	display: inline-block;
 	margin: 10px auto;
-	border-radius: 0 16px 16px 0;
+	border-radius: 0 20px 20px 0;
 	color: #fff;
 }
 
 #coupons {
 	width: 100%;
-	background: #00a0ff;
+	height: 40px;
+	background: linear-gradient(to right,#FA4DBE 0,#FBAA58 100%);
 	border: none;
 	font-size: 14px;
-	padding: 6px 0;
+	line-height: 40px;
+	font-weight: 600;
 	display: inline-block;
 	margin: 10px 0px;
-	border-radius: 16px 0 0 16px;
+	border-radius: 20px 0 0 20px;
 	color: #fff;
 	text-decoration: none;
 }
@@ -185,10 +192,6 @@ body {
 	<div class="imgContainer">
 		<img id="img" src="" alt="">
 	</div>
-	<p class="itemContent">
-		<strong class="itemPrice"></strong>
-		<div id="item_title" style="font-weight: 700;font-size: 14px;margin-bottom: 5px;"></div>
-	</p>
 	<div class="beatWord">
 		<fieldset>
 			<legend id="copy_tip">长按框内>全选>复制>打开手淘</legend>
@@ -196,12 +199,12 @@ body {
 			<!-- <span id='momey'></span> -->
 		</fieldset>
 		<div class="row-s">
-			<div class="col-12-4">
+			<div class="col-12-6">
 				<a id="coupons" href="" style="display:none;">
 					电脑链接
 				</a>
 			</div>
-			<div class="col-12-8">
+			<div class="col-12-6">
 				<button id="copy" type="button" data-clipboard-text="" class="itemCopy" style="display:none;">
 					手机链接
 				</button>
